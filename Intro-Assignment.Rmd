@@ -1,0 +1,57 @@
+---
+title: "Intro_Assignment"
+output: 
+  html_document: default
+  md_document:
+    variant: markdown_github
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+# Quick R Markdown Overview
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r ggplot_test, echo=FALSE}
+
+cars %>% ggplot(aes(x =speed, y = dist )) + geom_point() + geom_line()
+```
+
+# Assignment. 
+
+# Respond to each of the text in the headings below using R Markdown.
+
+Make sure you add a space after each heading.
+
+
+
+## 1. Using an unordered list, tell me two things about yourself.
+
+## 2. Briefly tell me about your background in programming. Include what software/languages that you have used.
+
+## 3. Briefly tell me about your math/stats background. Please whether or not you have had linear algebra and calculus.
+
+## 4. Have you ever used LaTex? Yes or No
+
+## 5. Add an R code block and add 2+2.

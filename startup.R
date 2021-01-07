@@ -1,11 +1,7 @@
 ##Startup code
 #git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-#git conifg --global -e
-#git config --global credential.helper store
 ##install needed packages
 install.packages('rmarkdown')
 install.packages('tidyverse')
-install.packages('credentials')
+
 ##store github credentials so you don't have to type them in everytime (optional)
-library(credentials)
-set_github_pat()
