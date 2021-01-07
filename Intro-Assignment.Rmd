@@ -1,11 +1,13 @@
 ---
 title: "Intro_Assignment"
-output: 
-  html_document: default
+output:
   md_document:
-    variant: markdown_github
-
+    variant: gfm
+  html_document:
+    df_print: paged
+#  pdf_document: default
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
